@@ -8,7 +8,7 @@ int main()
 
     scanf("%d", &n);
 
-    char word[n][100];
+    char word[n][1000];
 
     for(int i = 0; i < n; i++){
         scanf("%s", &word[i]);
@@ -27,8 +27,10 @@ int main()
 
                         first = word[i][0];
                         last = word[i][length-1];
+
+                        printf("%c%d%c \n",first, length-2, last);
                 }
-            printf("%c%d%c \n",first, length-2, last);
+
         }
 
         return 0;
